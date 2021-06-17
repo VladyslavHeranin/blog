@@ -45,7 +45,7 @@ export const NavCreatePost = (props) => {
         <div className="card-reveal">
             <span className="card-title grey-text text-darken-4"><i className="right">close</i></span>
             <div className="row">
-                <div className="col s6 offset-s3">
+                <div className="col s12 offset-s0">
                     <h1>Create Group</h1>
                     <div className="card blue darken-1">
                         <div className="card-content white-text">

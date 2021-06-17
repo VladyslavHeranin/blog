@@ -1,11 +1,9 @@
 
 import { useSelector } from "react-redux"
 import { NavLink } from "react-router-dom"
-import { User } from "./user"
 import { Auth } from "../../actions/user"
 import { useDispatch } from "react-redux"
 import { useEffect, useState } from "react"
-import { ListUser } from "../../actions/user"
 import { Post } from "./post"
 import { Input } from "../navigation-and-search-components/input"
 import { PostsList } from "../../actions/post"
@@ -37,7 +35,6 @@ export const Posts = () => {
 
     }, [page])
 
-
     return (
         <div className="card" >
             <NavLink to="/login"><button className="close_button" onClick={() => dispatch(Auth())}> &#8592; </button></NavLink>
@@ -52,7 +49,7 @@ export const Posts = () => {
 
             {user.postsAll >= page
                 ?
-                <button className="button" onClick={() => scrolleHendler()}> Lode More  </button>
+                <button className="button" onClick={() => scrolleHendler()}> Load More  </button>
                 :
                 <div className="buttonNotActive" onClick={() => window.M.toast({ html: "These are all posts" })}>These are all posts</div>}
 

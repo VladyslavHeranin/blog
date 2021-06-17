@@ -18,6 +18,7 @@ export const Input = (props) => {
         return "isAuth"
     }
 
+
     return <div className="card">
         <div className="card-content">
             <div className="row">
@@ -25,7 +26,8 @@ export const Input = (props) => {
                     <div className="row">
                         <div className="input-field col s12">
 
-                       {lists() === "list" ? <h2>FIND A USER</h2> :  <h2>FIND A POST</h2> }    
+
+                            {lists() === "list" ? <h2>FIND A USER</h2> : <h2>FIND A POST</h2>}
                             <input id="text" type="text" className="validate" onChange={(event) => props.setValInp(event.target.value)} />
                         </div>
                     </div>

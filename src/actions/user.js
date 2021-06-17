@@ -166,7 +166,7 @@ export const Search = (value, state, id, page) => {
 
             if (state === "list") {
                 dispatch(setList(response.data))
-            } if (state === "groups") {
+            } if (state === "posts") {
                 dispatch(setPostsList(response.data))
             }
 

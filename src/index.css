@@ -56,20 +56,13 @@
 }
 
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
 .new_post{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(221, 35, 35);
+    background-color: rgb(233, 68, 68);
     min-height: 50px;
-    min-width: 220px;
+    width: 220px;
     color: white;
     border-radius: 20px;
 }
@@ -78,4 +71,52 @@
     color:#454545;
     font-size:20px;
 }
+
+.header__nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.button__nav .btn{
+    margin-right:10px ;
+}
+
+.logo{
+    margin-left:10px ;
+    color: white;
+    font-size: 25px;
+}
+
+
+.width__name{
+    word-wrap: break-word;
+    width: 100%;
+}
+
+
+
+
+    @media (max-width: 700px) { 
+        .logo{
+           display: none;
+        }
+
+        .header__nav{
+            justify-content:flex-end;
+            margin: 0px;
+        }
+
+        .width__name{
+            word-wrap: break-word;
+            width: 100%;
+        }
+
+        .btn{
+            margin:5px;
+        }
+
+     }
+
 

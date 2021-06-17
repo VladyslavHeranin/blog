@@ -18,7 +18,7 @@ export const Login = () => {
 
     return (
         <div className="row">
-            <div className="col s6 offset-s3">
+            <div className="col s12 offset-s0">
                 <h1>Log In</h1>
                 <div className="card blue darken-1">
                     <div className="card-content white-text">

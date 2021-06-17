@@ -30,11 +30,11 @@ export const Registration = () => {
 
     return (
         <div className="row">
-            <div className="col s6 offset-s3">
+            <div className="col s12 offset-s0">
                 <h1>Registartion</h1>
                 <div className="card blue darken-1">
                     <div className="card-content white-text">
-                        <span className="card-title">Авторизация</span>
+                    
                         <div>
 
                             <div className="input-field ">

@@ -8,22 +8,19 @@ export const Header = () => {
     const dispatch = useDispatch()
     return <div className="card">
         <div className="card-content nav-wrapper blue-grey darken-1">
-            <nav className=" blue-grey darken-1">
 
-                <div className="brand-logo"> <span>Micro-blog platform</span></div>
+            <nav className="header__nav blue-grey darken-1">
+                <div > <span className="logo">Micro-blog platform</span></div>
 
-                <ul className="right hide-on-med-and-down left">
+                {!isAuth && <div className="button__nav">
+                    <button className="btn"><NavLink to="/login">Log in</NavLink></button>
+                    <button className="btn"><NavLink to="/registartion">Registartion</NavLink></button>
+                </div>
+                }
 
-                    {!isAuth && <li><NavLink to="/login">Log in</NavLink></li>}
-                    {!isAuth && <li><NavLink to="/registartion">Registartion</NavLink></li>}
-
-                    {isAuth &&
-                        <div>
-                            <button className="btn" onClick={() => dispatch(logOut())} >Log out</button>
-                        </div>
-                    }
-                </ul>
-
+                {isAuth && <div className="button__nav">
+                    <button className="btn" onClick={() => dispatch(logOut())} >Log out</button>
+                </div>}
             </nav>
         </div>
     </div>

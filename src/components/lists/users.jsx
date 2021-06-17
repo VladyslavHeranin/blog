@@ -65,7 +65,7 @@ export const Users = () => {
 
             {value.userAll >= page
                 ?
-                <button className="button" onClick={() => scrolleHendler()}> Lode More  </button>
+                <button className="button" onClick={() => scrolleHendler()}> Load More  </button>
                 :
                 <div className="buttonNotActive" onClick={() => window.M.toast({ html: "These are all users" })}>These are all users</div>}
         </div>
